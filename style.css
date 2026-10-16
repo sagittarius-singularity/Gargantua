@@ -648,7 +648,6 @@ button[aria-pressed="true"] .model-selector-checkmark {
 .sidebar.open .sidebar-content {
     transform: translateX(-20px);
     opacity: 1;
-    pointer-events: none;
 }
 
 #sidebar-openBtn {
