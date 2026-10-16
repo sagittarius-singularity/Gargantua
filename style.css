@@ -768,7 +768,19 @@ button[aria-pressed="true"] .model-selector-checkmark {
     }
 
     #sidebar-openBtn:hover {
+        background-color: transparent;
+    }
+
+    #sidebar-openBtn:active {
         background-color: #79797944;
+    }
+
+    #settings-openBtn:hover {
+        background-color: transparent;
+    }
+
+    #settings-openBtn:active {
+        background-color: #a8a8a833;
     }
 
     .sidebar.open #sidebar-openBtn {
@@ -816,25 +828,33 @@ button[aria-pressed="true"] .model-selector-checkmark {
 
     #messages {
         height: 65%;
-        width: 70%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
         position: relative;
         z-index: 0;
-        left: 50%;
-        transform: translateX(-50%);
         color: #000000;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        display: flex;
         padding: 15px;
         font-size: 17px;
-        flex-direction: column;
         gap: 10px;
         overflow-y: auto;
         overflow-x: hidden;
     }
 
+    .msg.error {
+        padding-left: 15px;
+    }
+
     .msg.error::before {
         display: none;
     }
+
+    .input-send-icon {
+        stroke-dashoffset: 0;
+    }
+
+    
 }
 
 /* ======= */
