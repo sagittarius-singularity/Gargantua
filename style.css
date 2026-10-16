@@ -20,7 +20,8 @@ body {
 
 .main-side-content {
     position: absolute;
-    width: 100vw;
+    width: 100%;
+    left: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,9 +30,7 @@ body {
 }
 
 .main-side-content.open-right {
-    transform: translateX(100px);
     overflow: hidden;
-    pointer-events: none;
 }
 
 .main-container.focus > *:not(#modelSelectorContainer) {
@@ -856,7 +855,9 @@ button[aria-pressed="true"] .model-selector-checkmark {
         stroke-dashoffset: 0;
     }
 
-    
+    .main-side-content.open-right {
+        background-color: #0000007b;
+    }    
 }
 
 /* ======= */
