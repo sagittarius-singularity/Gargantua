@@ -31,6 +31,7 @@ body {
 .main-side-content.open-right {
     transform: translateX(100px);
     overflow: hidden;
+    pointer-events: none;
 }
 
 .main-container.focus > *:not(#modelSelectorContainer) {
