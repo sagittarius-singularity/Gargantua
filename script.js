@@ -80,7 +80,6 @@ async function send() {
 
 
 sendBtn.addEventListener("click", (e) => {
-    send();
     const ripple = document.createElement("span")
     const rect = sendBtn.getBoundingClientRect()
 
@@ -93,12 +92,24 @@ sendBtn.addEventListener("click", (e) => {
 
     sendBtn.appendChild(ripple);
 
-    textarea.focus();
+    if (window.innerWidth > 768) {
+        textarea.focus();
+    } else {
+        if (textarea.value.trim() === "") {
+            textarea.focus();
+        } else {
+            textarea.blur();
+        }
+    }
+
+    send();
 
     ripple.addEventListener("transitionend", () => {
         ripple.remove();
     })
 });
+
+
 textarea.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
         e.preventDefault();
