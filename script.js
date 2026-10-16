@@ -108,8 +108,6 @@ sendBtn.addEventListener("click", (e) => {
         ripple.remove();
     })
 });
-
-
 textarea.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
         e.preventDefault();
@@ -281,4 +279,18 @@ settingsOpenBtn.addEventListener("pointerdown", (e) => {
         ripple.remove();
     })
 })
+
+
+mainSideContent.addEventListener("click", (e) => {
+    if (window.innerWidth < 768) {
+        e.stopPropagation();
+        if (mainSideContent.classList.contains("open-right")) {
+            sidebar.classList.remove("open");
+            mainSideContent.classList.remove("open-right");
+
+
+            sidebarOpenBtn.textContent = "≡";
+        }
+    }  
+});
 // ======= //
