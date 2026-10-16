@@ -113,6 +113,16 @@ sendBtn.addEventListener("click", (e) => {
 textarea.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
         e.preventDefault();
+        if (window.innerWidth > 768) {
+            textarea.focus();
+        } else {
+            if (textarea.value.trim() === "") {
+                textarea.focus();
+            } else {
+                textarea.blur();
+            }
+        }
+
         send();
     }
 });
