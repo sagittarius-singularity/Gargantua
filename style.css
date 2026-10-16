@@ -89,6 +89,7 @@ body {
     height: 45px;
     width: 45px;
     cursor: pointer;
+    touch-action: manipulation;
 }
 
 #header-model-icon-btn::after {
@@ -176,6 +177,7 @@ body {
     opacity: 0.5;
     user-select: none;
     overflow: hidden;
+    touch-action: manipulation;
 }
 
 .model-selector-btn:hover {
@@ -399,6 +401,7 @@ button[aria-pressed="true"] .model-selector-checkmark {
     transition: 0.2s ease;
     outline: none;
     overflow: hidden;
+    touch-action: manipulation;
 }
 
 #input-sendBtn::after {
@@ -669,6 +672,7 @@ button[aria-pressed="true"] .model-selector-checkmark {
     user-select: none;
     transition: background-color 0.2s ease, transform 0.2s ease-in-out;
     overflow: hidden;
+    touch-action: manipulation;
 }
 
 .sidebar-content {
@@ -696,6 +700,7 @@ button[aria-pressed="true"] .model-selector-checkmark {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    touch-action: manipulation;
 }
 
 #settings-wheel-openBtn {
