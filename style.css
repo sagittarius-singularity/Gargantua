@@ -634,6 +634,7 @@ button[aria-pressed="true"] .model-selector-checkmark {
 
 .sidebar {
     position: absolute;
+    z-index: 3;
     height: 100vh;
     width: var(--sidebar-width);
     background: #e3e3e3;
@@ -862,7 +863,13 @@ button[aria-pressed="true"] .model-selector-checkmark {
 
     .main-side-content.open-right {
         background-color: #0000007b;
-    }    
+        z-index: 2;
+    }
+
+    .main-side-content.open-right .textarea-container {
+        z-index: -1;
+        opacity: 0.3;
+    }
 }
 
 /* ======= */
