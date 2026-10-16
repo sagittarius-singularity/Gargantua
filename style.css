@@ -90,6 +90,9 @@ body {
     width: 45px;
     cursor: pointer;
     touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
 }
 
 #header-model-icon-btn::after {
@@ -178,6 +181,8 @@ body {
     user-select: none;
     overflow: hidden;
     touch-action: manipulation;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .model-selector-btn:hover {
@@ -402,6 +407,9 @@ button[aria-pressed="true"] .model-selector-checkmark {
     outline: none;
     overflow: hidden;
     touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
 }
 
 #input-sendBtn::after {
@@ -674,6 +682,9 @@ button[aria-pressed="true"] .model-selector-checkmark {
     transition: background-color 0.2s ease, transform 0.2s ease-in-out;
     overflow: hidden;
     touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .sidebar-content {
@@ -702,6 +713,9 @@ button[aria-pressed="true"] .model-selector-checkmark {
     align-items: center;
     overflow: hidden;
     touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
 }
 
 #settings-wheel-openBtn {
